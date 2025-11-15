@@ -27,11 +27,16 @@ const Details = () => {
       alignItems={"center"}
       gap={20}
     >
-      <Content width={"100%"} height={"65%"} borderWidth={1} marginTop={10}>
+      <Content
+        width={"100%"}
+        height={"65%"}
+        borderWidth={1}
+        marginTop={10}
+      >
         <mesh>
           <planeGeometry />
           <MeshPortalMaterial>
-            <Environment preset="sunset" />
+            <Environment files="/venice_sunset_1k.hdr" />
             <Gltf
               position-y={-0.3}
               src={productDetails.src}
@@ -54,7 +59,9 @@ const Details = () => {
         </Container>
         <Container>
           <Text marginRight={10}>Price</Text>
-          <Text fontWeight={"bold"}>$ {productDetails.price.toFixed(2)}</Text>
+          <Text fontWeight={"bold"}>
+            $ {productDetails.price.toFixed(2)}
+          </Text>
         </Container>
         <Button
           backgroundColor={"hotpink"}

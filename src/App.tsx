@@ -20,10 +20,14 @@ export default function App() {
       >
         <Defaults>
           <ambientLight />
-          <Environment preset="sunset" />
+          <Environment files="/venice_sunset_1k.hdr" />
           <OrbitControls />
           <Fullscreen>
-            <Container width={"100%"} height={"100%"} flexDirection={"column"}>
+            <Container
+              width={"100%"}
+              height={"100%"}
+              flexDirection={"column"}
+            >
               <Header />
               <Routes>
                 <Route element={<Home />} path="/" />
