@@ -55,7 +55,7 @@ const Details = () => {
       >
         <Container>
           <Text marginRight={10}>Name</Text>
-          <Text fontWeight={"bold"}>{productDetails.name}</Text>
+          <Text fontWeight="bold">{productDetails.name}</Text>
         </Container>
         <Container>
           <Text marginRight={10}>Price</Text>
